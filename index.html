@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Practice Projects</title>
+<style>
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+header {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #cbd5e1;
+    font-size: 16px;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.welcome h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #172554;
+}
+
+.welcome p {
+    color: #64748b;
+    font-size: 16px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #1e293b;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    border-left: 5px solid #2563eb;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.13);
+}
+
+.number {
+    color: #2563eb;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #64748b;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.card span {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+
+@media (max-width: 600px) {
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+    <header>
+        <h1>API Practice Projects</h1>
+        <p>My JavaScript API Assignment</p>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h2>Welcome!</h2>
+            <p>Select a question below to view the project.</p>
+        </section>
+
+        <section class="projects">
+
+            <a href="crud.html" class="card">
+                <div class="number">01</div>
+                <h2>Question 1</h2>
+                <p>Fetch API CRUD Practice</p>
+                <span>Open Project →</span>
+            </a>
+
+            <a href="products.html" class="card">
+                <div class="number">02</div>
+                <h2>Question 2</h2>
+                <p>Product Explorer</p>
+                <span>Open Project →</span>
+            </a>
+
+            <a href="recipe.html" class="card">
+                <div class="number">03</div>
+                <h2>Question 3</h2>
+                <p>Recipe Finder</p>
+                <span>Open Project →</span>
+            </a>
+
+            <a href="type.html" class="card">
+                <div class="number">04</div>
+                <h2>Question 4</h2>
+                <p>Create and Update a Post</p>
+                <span>Open Project →</span>
+            </a>
+
+        </section>
+    </main>
+
+
+</body>
+</html>

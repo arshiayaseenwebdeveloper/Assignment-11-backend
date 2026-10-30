@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fetch API CRUD Practice</title>
+    <link rel="stylesheet" href="crud.css">
+</head>
+<body>
+    <header>
+        <h1>Fetch API CRUD Practice</h1>
+        <p>GET | POST | PUT | PATCH | DELETE</p>
+    </header>
+
+    <main class="container">
+        <section class="box">
+            <h2>Add a New Post</h2>
+            <p class="subtitle">Enter the information below to create a post.</p>
+            <form id="postForm">
+                <div class="row">
+                    <div class="field">
+                        <label for="title">Post title</label>
+                        <input type="text" id="title" placeholder="Enter post title" required>
+                    </div>
+                    <div class="field">
+                        <label for="userId">User ID</label>
+                        <input type="number" id="userId" value="1" min="1" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="body">Post content</label>
+                    <textarea id="body" placeholder="Write your post content here..." required></textarea>
+                </div>
+                <button type="submit" class="add-button">Add Post — POST</button>
+                <button type="button" id="reload" class="reload-button">Reload Posts — GET</button>
+            </form>
+            <p id="message">Loading posts...</p>
+            <small>JSONPlaceholder is a practice API. Changes appear on this page but are not permanently saved on its server.</small>
+        </section>
+
+        <section class="box">
+            <div class="posts-heading">
+                <div>
+                    <h2>Posts</h2>
+                    <p class="subtitle">View and manage your posts.</p>
+                </div>
+                <span id="count"></span>
+            </div>
+            <div id="posts" class="posts"></div>
+        </section>
+    </main>
+    <script src="crud.js"></script>
+</body>
+</html>

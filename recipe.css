@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f5f2;
+    color: #29352d;
+}
+
+header {
+    background: #315b46;
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+}
+
+header h1 {
+    margin: 0 0 8px;
+    font-size: 30px;
+}
+
+header p {
+    margin: 0;
+    color: #e1eee5;
+    font-size: 15px;
+}
+
+.container {
+    width: 1000px;
+    max-width: 94%;
+    margin: 25px auto;
+}
+
+#message {
+    background: #e4f1e8;
+    color: #315b46;
+    padding: 12px;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.recipe-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(40, 65, 48, 0.10);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.recipe-info {
+    padding: 15px;
+}
+
+.recipe-info h3 {
+    margin: 0 0 10px;
+    color: #315b46;
+    font-size: 18px;
+}
+
+.recipe-info p {
+    margin: 7px 0;
+    color: #657267;
+    font-size: 14px;
+}
+
+.recipe-info button {
+    margin-top: 10px;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #e28b45;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.recipe-info button:hover {
+    background: #c97634;
+}
+
+.details {
+    margin-top: 25px;
+    padding: 22px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(40, 65, 48, 0.08);
+}
+
+.details h2 {
+    margin-top: 0;
+    color: #315b46;
+}
+
+.details ul {
+    padding-left: 22px;
+    line-height: 1.8;
+}
+
+.error {
+    background: #fde9e7 !important;
+    color: #a83226 !important;
+}
+
+@media (max-width: 750px) {
+    .recipes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .recipes {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}
